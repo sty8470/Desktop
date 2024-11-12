@@ -15,9 +15,11 @@ class ValidParenthesis:
         lookup = {"}": "{", "]": "[", ")": "("}
         
         for p in self.parenthesis:
+            # 열린 괄호 먼저 처리하기 
             if p in lookup.values():
                 stack.append(p)
             
+            # 닫힌 괄호 후속 처리하기
             elif stack and lookup[p] == stack[-1]:
                 stack.pop()
             
