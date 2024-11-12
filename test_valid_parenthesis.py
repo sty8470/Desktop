@@ -1,4 +1,8 @@
 # test_valid_parenthesis.py
+"""
+CI/CD 파이프라인의 자동화된 process로 실행하게끔 만든다. 
+"""
+
 from valid_parenthesis import ValidParenthesis
 
 def test_valid_simple_parentheses():
